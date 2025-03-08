@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData> 
+    <name>Colonist Conditioning</name>
+    <description>
+        Condition your colonists with activities to gain temporary traits.
+    </description> 
+    <author>StormDexter</author>
+    <supportedVersions>
+      <li>1.5</li> 
+    </supportedVersions> 
+    <packageId>StormDexter.ColonyConditioning</packageId> 
+</ModMetaData>
