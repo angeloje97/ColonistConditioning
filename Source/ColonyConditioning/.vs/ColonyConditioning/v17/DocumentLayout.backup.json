@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDED4318-FA79-4968-813E-89643D442C4B}|ColonyConditioning.csproj|b:\\steam\\steamapps\\common\\rimworld\\mods\\colonist conditioning\\source\\colonyconditioning\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDED4318-FA79-4968-813E-89643D442C4B}|ColonyConditioning.csproj|solutionrelative:settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDED4318-FA79-4968-813E-89643D442C4B}|ColonyConditioning.csproj|B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDED4318-FA79-4968-813E-89643D442C4B}|ColonyConditioning.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDED4318-FA79-4968-813E-89643D442C4B}|ColonyConditioning.csproj|B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDED4318-FA79-4968-813E-89643D442C4B}|ColonyConditioning.csproj|solutionrelative:manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\Manager.cs",
+              "RelativeDocumentMoniker": "Manager.cs",
+              "ToolTip": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\Manager.cs",
+              "RelativeToolTip": "Manager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T03:07:03.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\Utility.cs",
+              "RelativeDocumentMoniker": "Utility.cs",
+              "ToolTip": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\Utility.cs",
+              "RelativeToolTip": "Utility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T04:48:56.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\Settings.cs",
+              "RelativeDocumentMoniker": "Settings.cs",
+              "ToolTip": "B:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Colonist Conditioning\\Source\\ColonyConditioning\\Settings.cs",
+              "RelativeToolTip": "Settings.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T01:12:42.955Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
