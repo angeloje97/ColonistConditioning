@@ -1,0 +1,5 @@
+B:\Steam\steamapps\common\RimWorld\Mods\Colonist Conditioning\Assemblies\ColonyConditioning.dll
+B:\Steam\steamapps\common\RimWorld\Mods\Colonist Conditioning\Source\ColonistConditioning\obj\Debug\ColonistConditioning.csproj.AssemblyReference.cache
+B:\Steam\steamapps\common\RimWorld\Mods\Colonist Conditioning\Source\ColonistConditioning\obj\Debug\ColonistConditioning.csproj.CoreCompileInputs.cache
+B:\Steam\steamapps\common\RimWorld\Mods\Colonist Conditioning\Source\ColonistConditioning\obj\Debug\Colonist.A27B167E.Up2Date
+B:\Steam\steamapps\common\RimWorld\Mods\Colonist Conditioning\Source\ColonistConditioning\obj\Debug\ColonyConditioning.dll
