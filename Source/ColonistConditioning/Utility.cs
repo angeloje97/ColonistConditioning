@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld.QuestGen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -18,11 +19,15 @@ namespace ColonistConditioning
         #endregion
 
         readonly static Dictionary<Tuple<Pawn, string>, int> tickCounters = new Dictionary<Tuple<Pawn, string>, int>();
+        readonly static Dictionary<Tuple<string, string>, int> tickCountersFunction = new Dictionary<Tuple<string, string>, int>();
+        
         readonly static int tickInterval = 60;
+        readonly static int dayTickInterval = 1000;
+
         public static bool TickElapsed(Pawn pawn, [CallerMemberName] string methodName = null, [CallerLineNumber] int lineNumber = 0)
         {
             var key = new Tuple<Pawn, string>(pawn, methodName);
-            if(!tickCounters.ContainsKey(key))
+            if (!tickCounters.ContainsKey(key))
             {
                 tickCounters[key] = 1;
                 return false;
@@ -38,6 +43,26 @@ namespace ColonistConditioning
 
             return true;
         }
+        public static bool LongTickElapsed(string id, [CallerMemberName] string methodName = null, [CallerLineNumber] int lineNumber = 0)
+        {
+            var key = new Tuple<string, string>(id, methodName);
+            if (!tickCountersFunction.ContainsKey(key))
+            {
+                tickCountersFunction[key] = 1;
+                return false;
+            }
+
+            if (tickCountersFunction[key] < dayTickInterval)
+            {
+                tickCountersFunction[key]++;
+                return false;
+            }
+
+            tickCountersFunction[key] = 0;
+
+            return true;
+        }
+
     }
 
 }

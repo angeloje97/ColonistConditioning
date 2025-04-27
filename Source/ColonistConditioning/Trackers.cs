@@ -1,5 +1,6 @@
 ﻿using ColonistConditioning;
 using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,6 @@ namespace ColonyConditioning
     [StaticConstructorOnStartup]
     public static class HarmonyPatches
     {
-        public static DistanceTracker DistanceTrackerInstance = new DistanceTracker();
-
         static HarmonyPatches()
         {
             var harmony = new Harmony(Utility.UID);
@@ -33,7 +32,7 @@ namespace ColonyConditioning
         {
             if (__instance.IsColonist)
             {
-                HarmonyPatches.DistanceTrackerInstance.Update(__instance);
+                DistanceTracker.Instance.Update(__instance);
             }
         }
     }
@@ -75,6 +74,7 @@ namespace ColonyConditioning
     
     public class DistanceTracker: Tracker<float>
     {
+        public static DistanceTracker Instance = new DistanceTracker();
         public override string label => "Distance Tracker";
         public Dictionary<Pawn, IntVec3> lastPositions = new Dictionary<Pawn, IntVec3>();
 
@@ -100,9 +100,43 @@ namespace ColonyConditioning
     }
 
     #endregion
-    
+
     #region Milestones
 
 
+    #endregion
+
+    #region Day Tracker
+    public class DayTracker : GameComponent
+    {
+        int lastDayTick = -1;
+        public DayTracker() { }
+
+        public override void GameComponentTick()
+        {
+            if (!Utility.LongTickElapsed("Day Tracker")) return;
+            base.GameComponentTick();
+
+            int currentTick = Find.TickManager.TicksGame;
+            int currentDay = currentTick / GenDate.TicksPerDay;
+
+            if(currentDay != lastDayTick)
+            {
+                lastDayTick = currentDay;
+                OnNewDay();
+            }
+        }
+
+        void OnNewDay()
+        {
+            var pawns = PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_Colonists.ToList();
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref lastDayTick, "lastDayTick", -1);
+        }
+    }
     #endregion
 }
